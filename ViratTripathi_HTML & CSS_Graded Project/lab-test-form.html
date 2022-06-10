@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book a Lab Test Now!</title>
+        <link rel="stylesheet" href="css/lab-test.css">
+    </head>
+    <body>
+        <form>
+            <section class="scroll">
+                <div id="lab-test-form">
+                    <h3>1. Your Contact Details</h3>
+                    <div class="form-section">
+                        <div class="left">
+                            <label for="fullName"></label>
+                            <input class="form-field" type="text" placeholder="Full Name" id="fullName" required>
+                        </div>
+                        <div class="left">
+                            <label for="patientId"></label>
+                            <input class="form-field" type="text" placeholder="Patient ID if exists" id="patientId">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="left">
+                            <label for="contactNumber"></label>
+                            <input class="form-field" type="number" placeholder="Contact Number" min="6000000000"
+                                   max="9999999999" id="contactNumber" required>
+                        </div>
+                        <div class="left">
+                            <label for="emailId"></label>
+                            <input class="form-field" type="email" placeholder="Email ID" id="emailId" required>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <h3>2. Address</h3>
+                    <div class="form-section">
+                        <div class="left">
+                            <label for="houseNo"></label>
+                            <input class="form-field" type="text" placeholder="H-No" id="houseNo" required>
+                        </div>
+                        <div class="left">
+                            <label for="street"></label>
+                            <input class="form-field" type="text" placeholder="Street" id="street" required>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="left">
+                            <label for="area"></label>
+                            <input class="form-field" type="text" placeholder="Area" id="area" required>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="left">
+                            <h4>District</h4>
+                            <label for="district"></label>
+                            <select class="form-field-district" id="district" required>
+                                <option disabled="disabled" selected="selected" value="not-selected">Choose</option>
+                                <option value="Jaipur">Jaipur</option>
+                                <option value="Kota">Kota</option>
+                                <option value="Ajmer">Ajmer</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <h3>3. Choose the test type </h3>
+                    <span>(Check at-least one box)</span>
+                    <div class="form-section">
+                        <div class="left checkbox">
+                            <input type="checkbox" id="test-1" name="test-1" value="CBC" required>
+                            <label for="test-1">CBC</label>
+                        </div>
+                        <div class="left checkbox">
+                            <input type="checkbox" id="test-2" name="test-2" value="Complete Urine">
+                            <label for="test-2">Complete Urine</label>
+                        </div>
+                        <div class="left checkbox">
+                            <input type="checkbox" id="test-3" name="test-3" value="Lipid Profile">
+                            <label for="test-3">Lipid Profile</label>
+                        </div>
+                        <div class="left checkbox">
+                            <input type="checkbox" id="test-4" name="test-4" value="Thyroid Stimulating Hormone (TSH)">
+                            <label for="test-4">Thyroid Stimulating Hormone (TSH)</label>
+                        </div>
+                        <div class="left checkbox">
+                            <input type="checkbox" id="test-5" name="test-5" value="Glucose Test">
+                            <label for="test-5">Glucose Test</label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <h3>4. Do you want a hard copy of the report also? </h3>
+                    <div class="form-section">
+                        <div class="radio">
+                            <input type="radio" id="hard-copy-report-yes" name="hard-copy-report" value="YES" required>
+                            <label for="hard-copy-report-yes">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="hard-copy-report-no" name="hard-copy-report" value="NO" required>
+                            <label for="hard-copy-report-no">No</label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <h3>5. Select Your Comfortable Date and Time</h3>
+                    <div class="form-section">
+                        <div style="float: left">
+                            <label for="date"></label>
+                            <input class="form-field-date-time" type="date" placeholder="Date" id="date" required>
+                        </div>
+                        <div style="float: left; margin-left: 30px">
+                            <label for="time"></label>
+                            <input class="form-field-date-time" type="time" placeholder="Time" id="time">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <img class="form-image" src="img/lab-test/lab-test.jpg">
+            </section>
+            <div class="buttons">
+                <button class="button" type="reset">Reset</button>
+                <button class="button" type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+
+</html>
